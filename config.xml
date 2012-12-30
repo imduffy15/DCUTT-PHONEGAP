@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.dcutt.android"
         version     = "0.0.5"
-        versionCode = "200">
+        versionCode = "220">
     <name>DCU Timetables</name>
 
     <description>
