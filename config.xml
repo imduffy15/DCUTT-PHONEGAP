@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.dcutt.android"
+        version     = "0.0.5">
+    <name>DCU Timetables</name>
+
+    <description>
+        Mobile application for viewing DCU Timetables
+    </description>
+
+    <author href="http:/dcutt.com/#!/credits" email="devs@ianduffy.ie">
+      Ben Chapman and Ian Duffy
+    </author>
+
+    <feature name="http://api.phonegap.com/1.0/device" />
+
+    <preference name="phonegap-version"           value="2.2.0" />
+    <preference name="orientation"                value="portrait" />
+    <preference name="target-device"              value="universal" />
+    <preference name="fullscreen"                 value="false" />
+    <preference name="webviewbounce"              value="false" />
+    <preference name="prerendered-icon"           value="true" />
+    <preference name="exit-on-suspend"            value="true" />
+    <preference name="show-splash-screen-spinner" value="false" />
+    <preference name="splash-screen-duration"     value="3000" />
+
+    <icon src="img/icons/icon-57.png"/>
+    <icon src="img/icons/icon-36.png"   gap:platform="android"    gap:density="ldpi" />
+    <icon src="img/icons/icon-48.png"   gap:platform="android"    gap:density="mdpi" />
+    <icon src="img/icons/icon-72.png"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="img/icons/icon-96.png"  gap:platform="android"    gap:density="xhdpi" />
+
+    <gap:splash src="img/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="img/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="img/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="img/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+</widget>
