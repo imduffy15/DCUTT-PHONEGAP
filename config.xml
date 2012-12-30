@@ -31,8 +31,8 @@
     <icon src="img/icons/icon-72.png"   gap:platform="android"    gap:density="hdpi" />
     <icon src="img/icons/icon-96.png"  gap:platform="android"    gap:density="xhdpi" />
 
-    <gap:splash src="img/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="img/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="img/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="img/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+    <gap:splash src="img/screens/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="img/screens/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="img/screens/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="img/screens/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
 </widget>
