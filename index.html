@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:ng="http://angularjs.org" lang="en">
     <head>
         <meta charset="utf-8">
         <title>DCU Timetables</title>
@@ -10,15 +10,16 @@
 
         <meta name="apple-mobile-web-app-capable" content="yes">
         
-        <link rel="stylesheet" href="styles/adac4e4f.reset.css">
-        <link rel="stylesheet" href="styles/d6feaa96.main.css">
+        <link rel="stylesheet" href="styles/f48685cd.main.css">
     </head>
-    <body ng-app="dcuTimetablesApp">
-        <div class="container" ng-view></div>
-        <script src="scripts/vendor/a08feb97.zepto.min.js"></script>
-        <script src="scripts/vendor/b8bcec9c.moment.min.js"></script>
-        <script src="scripts/vendor/8bb65a64.iscroll.min.js"></script>
-        <script src="scripts/vendor/120541a7.angular.min.js"></script>
-        <script src="scripts/0d367a6f.scripts.js"></script>
+    <body id="ng-app" ng-app="dcuTimetablesApp">
+      <div role="main" ng-view>
+      </div>
+      <script src="scripts/vendor/3557f843.angular.min.js"></script>
+      <script src="scripts/vendor/a08feb97.zepto.min.js"></script>
+      <script src="scripts/vendor/b8bcec9c.moment.min.js"></script>
+      <script src="scripts/vendor/34613263.overthrown.min.js"></script>
+      <script src="scripts/vendor/08a45634.fastclick.min.js"></script>
+      <script src="scripts/935659cb.scripts.js"></script>
     </body>
 </html>
