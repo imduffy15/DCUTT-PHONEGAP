@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html xmlns:ng="http://angularjs.org" lang="en">
+<html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>DCU Timetables</title>
         <meta name="description" content="Mobile web app for accessing DCU timetables">
         <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-
+        
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icons/icon-144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/icon-114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/icon-72.png">
+        <link rel="apple-touch-icon-precomposed" href="img/icons/icon-57.png">
         <link rel="shortcut icon" href="img/icons/icon-57.png">
 
         <meta name="apple-mobile-web-app-capable" content="yes">
         
         <link rel="stylesheet" href="styles/f48685cd.main.css">
     </head>
-    <body id="ng-app" ng-app="dcuTimetablesApp">
-      <div role="main" ng-view>
-      </div>
-      <script src="scripts/vendor/3557f843.angular.min.js"></script>
+
+    <body ng-app="dcuTimetablesApp">
+      <div class="container" ng-view></div>
+
+      <script src="scripts/vendor/120541a7.angular.min.js"></script>
       <script src="scripts/vendor/a08feb97.zepto.min.js"></script>
       <script src="scripts/vendor/b8bcec9c.moment.min.js"></script>
-      <script src="scripts/vendor/34613263.overthrown.min.js"></script>
+      <script src="scripts/vendor/8bb65a64.iscroll.min.js"></script>
       <script src="scripts/vendor/08a45634.fastclick.min.js"></script>
-      <script src="scripts/935659cb.scripts.js"></script>
+      
+      <script src="scripts/9f35c73c.scripts.js"></script>
     </body>
 </html>

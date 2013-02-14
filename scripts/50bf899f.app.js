@@ -1,3 +1,5 @@
+var storage = window.localStorage;
+
 var dcuTimetablesApp = angular.module('dcuTimetablesApp', [])
   .config(
     ['$routeProvider', '$locationProvider',
@@ -29,10 +31,3 @@ var dcuTimetablesApp = angular.module('dcuTimetablesApp', [])
       }
     ]
   );
-
-  
-  window.addEventListener('load', function() {
-      new FastClick(document.body);
-  }, false);
-  
-  var storage = window.localStorage;

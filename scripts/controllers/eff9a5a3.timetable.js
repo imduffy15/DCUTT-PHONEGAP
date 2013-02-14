@@ -5,11 +5,13 @@ function($scope, $location, $routeParams, $http) {
     $scope.date = moment().format('YYYY-MM-DD');
     var timetable = {};
     var cached = storage.getItem('timetable-cached');
-
+    var myScroll = new iScroll('wrapper', { hScrollbar: false, vScrollbar: true, bounce: false, fadeScrollbar: true});
+    
     var updateEvents = function() {
         $scope.day = timetable[$scope.date];
         $scope.dayDate = moment($scope.date, 'YYYY-MM-DD').format('DD-MM-YYYY');
         $scope.dayName = moment($scope.date, 'YYYY-MM-DD').format('dddd');
+        setTimeout(updateScrolling,300);
     };
     $scope.updateEvents = updateEvents;
 
@@ -27,6 +29,10 @@ function($scope, $location, $routeParams, $http) {
     };
     $scope.prevDay = prevDay;
 
+    var updateScrolling = function() {
+      myScroll.refresh();
+    }
+
     if(cached) {
       timetable = JSON.parse(storage.getItem('timetable'));
       updateEvents();
@@ -35,7 +41,7 @@ function($scope, $location, $routeParams, $http) {
 
     if ((Math.round(new Date().getTime() / 1000) - cached) > 86400) {
       $http.jsonp(
-        'http://api.dcutt.ianduffy.ie/index.php?callback=JSON_CALLBACK&coursecode=' + $routeParams.coursecode,
+        'http://api.dcutt.com/index.php?callback=JSON_CALLBACK&coursecode=' + $routeParams.coursecode,
         {timeout:500}
       ).
       success(function(data) {
