@@ -2,8 +2,8 @@
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.dcutt.android"
-        version     = "0.0.6"
-        versionCode = "240">
+        version     = "0.0.8"
+        versionCode = "300">
     <name>DCU Timetables</name>
 
     <description>
