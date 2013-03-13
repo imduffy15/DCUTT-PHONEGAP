@@ -1,37 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.dcutt.android"
+        id          = "ie.ianduffy.phonegap"
         version     = "1.0.0"
-        versionCode = "310">
-    <name>DCU Timetables</name>
+        versionCode = "100">
+    <name>Example build</name>
 
     <description>
-        Mobile application for viewing DCU Timetables
+        Example build for build.phonegap.com
     </description>
-
-    <author href="http:/dcutt.com/#!/about" email="devs@ianduffy.ie">
-      Ben Chapman and Ian Duffy
+    
+    <author href="http://ianduffy.ie" email="ian@ianduffy.ie">
+            Ian Duffy 
     </author>
-
+    
     <preference name="phonegap-version"           value="2.3.0" />
     <preference name="orientation"                value="portrait" />
     <preference name="target-device"              value="universal" />
     <preference name="fullscreen"                 value="false" />
     <preference name="webviewbounce"              value="false" />
     <preference name="prerendered-icon"           value="true" />
-    <preference name="exit-on-suspend"            value="true" />
-    <preference name="show-splash-screen-spinner" value="false" />
-    <preference name="splash-screen-duration"     value="3000" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="android-minSdkVersion" value="5" />
+    <preference name="permissions" value="none"/>
+    <preference name="load-url-timeout" value="10000" />
+    
+    <feature name="http://api.phonegap.com/1.0/battery"/>
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
 
-    <icon src="img/icons/icon-57.png"/>
-    <icon src="img/icons/icon-36.png"   gap:platform="android"    gap:density="ldpi" />
-    <icon src="img/icons/icon-48.png"   gap:platform="android"    gap:density="mdpi" />
-    <icon src="img/icons/icon-72.png"   gap:platform="android"    gap:density="hdpi" />
-    <icon src="img/icons/icon-96.png"   gap:platform="android"    gap:density="xhdpi" />
+    <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
+    <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:density="mdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="res/icon/android/icon-96-xhdpi.png"   gap:platform="android"    gap:density="xhdpi" />
 
-    <gap:splash src="img/screens/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="img/screens/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="img/screens/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="img/screens/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+    <gap:splash src="res/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-landscape.png" gap:platform="android" gap:density="xhdpi" />
 </widget>
