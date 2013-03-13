@@ -29,9 +29,11 @@
       <script src="scripts/vendor/08a45634.fastclick.min.js"></script>
       <script src="scripts/9aac82eb.scripts.js"></script>
       <script>
-      document.addEventListener("backbutton", function(e){
-        navigator.app.exitApp();
-      }, false);
+        document.addEventListener("backbutton", onBackKeyDown, false);
+        function onBackKeyDown() {
+          alert("Attempting to exit");
+          navigator.app.exitApp();
+        }
       </script>
   </body>
 </html>
