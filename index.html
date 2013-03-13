@@ -21,9 +21,7 @@
         document.addEventListener("deviceready", loadApp, true);
         function loadApp() {
           navigator.splashscreen.hide();
-          alert("test");
-          alert(device.name);
-          navigator.notification.vibrate(2000);
+          document.addEventListener("backbutton", navigator.app.exitApp, false);
         }
       </script>
   </head>
