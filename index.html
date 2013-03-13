@@ -19,7 +19,7 @@
       <script src="phonegap.js"></script>
       <script>
         document.addEventListener("deviceready", loadApp, true);
-        loadApp {
+        function loadApp() {
           navigator.splashscreen.hide();
           alert("test");
           alert(device.name);
