@@ -16,24 +16,22 @@
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
       </script>
-  </head onload="navigator.splashscreen.hide()">
+      <script src="phonegap.js"></script>
+      <script>
+        alert("test");
+        alert(device.name);
+        navigator.notification.vibrate(2000);
+      </script>
+  </head>
   <body id="ng-app" ng-app="dcuTimetablesApp" role="application" aria-live="polite">      
       <div ng-view>
       </div>
       
-      <script src="phonegap.js"></script>
       <script src="scripts/vendor/120541a7.angular.min.js"></script>
       <script src="scripts/vendor/a08feb97.zepto.min.js"></script>
       <script src="scripts/vendor/b8bcec9c.moment.min.js"></script>
       <script src="scripts/vendor/8bb65a64.iscroll.min.js"></script>
       <script src="scripts/vendor/08a45634.fastclick.min.js"></script>
       <script src="scripts/9aac82eb.scripts.js"></script>
-      <script>
-        document.addEventListener("backbutton", onBackKeyDown, false);
-        function onBackKeyDown() {
-          alert("Attempting to exit");
-          navigator.app.exitApp();
-        }
-      </script>
   </body>
 </html>
